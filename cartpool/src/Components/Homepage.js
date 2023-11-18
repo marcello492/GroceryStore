@@ -25,6 +25,7 @@ const Homepage = () => {
                     <Typography variant="h5" color="textSecondary">
                         Your ride to the grocery store
                     </Typography>
+                    <Button component={Link} to="/driver-homepage" variant="contained" color="primary">test</Button>
                 </Container>
                 
                 <Grid container spacing={4} justifyContent="center">
