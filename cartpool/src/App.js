@@ -2,10 +2,10 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Homepage from './Components/Homepage';
-import ShopperSignIn from './Components/ShopperSignIn';
-import ShopperSignUp from './Components/ShopperSignUp';
-import DriverSignIn from './Components/DriverSignIn';
-import DriverSignUp from './Components/DriverSignUp';
+import ShopperSignIn from './Components/Sign_Ins/ShopperSignIn';
+import ShopperSignUp from './Components/Sign_Ups/ShopperSignUp';
+import DriverSignIn from './Components/Sign_Ins/DriverSignIn';
+import DriverSignUp from './Components/Sign_Ups/DriverSignUp';
 
 function App() {
     return (
