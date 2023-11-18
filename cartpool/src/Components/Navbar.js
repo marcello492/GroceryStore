@@ -1,19 +1,18 @@
-// Navbar.js
+// src/components/Navbar.js
 import React from 'react';
-import { AppBar, Toolbar, Button, Box } from '@mui/material';
+import { AppBar, Toolbar, Typography } from '@mui/material';
 import { Link } from 'react-router-dom';
+import logo from '../assets/cartpool_logo.png'; // Your logo path
 
 const Navbar = () => {
     return (
-        <AppBar position="static">
+        <AppBar position="static" color="transparent" elevation={0}>
             <Toolbar>
-                <Box style={{ flexGrow: 1 }}>
-                    <Link to="/">
-                        <img src="cartpool/src/assets/cartpool_logo.png" alt="CartPool Logo" style={{ maxHeight: 50 }} />
-                    </Link>
-                </Box>
-                <Button color="inherit" component={Link} to="/shopper-signin">Shopper Sign In</Button>
-                <Button color="inherit" component={Link} to="/driver-signin">Driver Sign In</Button>
+                <Link to="/">
+                    <img src={logo} alt="CartPool Logo" style={{ height: 200 }} />
+                </Link>
+                <Typography variant="h6" style={{ flexGrow: 1 }}></Typography>
+                {/* Leave space for potential additional navbar items */}
             </Toolbar>
         </AppBar>
     );
