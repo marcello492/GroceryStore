@@ -1,9 +1,9 @@
 // src/components/Homepage.js
 import React from 'react';
 import { Box, Button, Container, Grid, Paper, Typography } from '@mui/material';
-import carIcon from '../assets/car.png'; // Your car icon path
-import shoppingCartIcon from '../assets/shopping_cart.png'; // Your shopping cart icon path
-import logo from '../assets/cartpool_logo.png'; // Your logo path
+import carIcon from '../assets/car.png';
+import shoppingCartIcon from '../assets/shopping_cart.png'; 
+import logo from '../assets/cartpool_logo.png';
 import { Link } from 'react-router-dom';
 
 const Homepage = () => {
@@ -11,8 +11,8 @@ const Homepage = () => {
 
     return (
         <>
-            {/* Absolute positioning of the logo */}
-            <Box sx={{ position: 'absolute', top: 0, left: 0, padding: '0rem' }}>
+            
+            <Box component={Link} to="/" sx={{ position: 'absolute', top: 0, left: 0, padding: '0rem' }}>
                 <img src={logo} alt="CartPool Logo" style={{ maxHeight: '200px' }} />
             </Box>
 
