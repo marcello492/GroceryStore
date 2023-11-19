@@ -1,12 +1,20 @@
 // DriverSignIn.js
-import React from 'react';
+import React, { useContext, useState } from 'react';
 import { Box, Container, Typography, TextField, Button, Paper, Grid } from '@mui/material';
 import carIcon from '../../assets/car.png';
 import logo from '../../assets/cartpool_logo.png';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import { Link as RouterLink } from 'react-router-dom';
 
+
 const DriverSignIn = () => {
+    
+    const navigate = useNavigate();
+  
+    const handleSubmit = async (event) => {
+        navigate('/driver-homepage');
+    };
+
     return (
         <>
         <Box component={Link} to="/" sx={{ position: 'absolute', top: 0, left: 0, padding: '0rem' }}>
@@ -57,6 +65,7 @@ const DriverSignIn = () => {
                             variant="contained"
                             color="primary"
                             sx={{ mt: 3, mb: 2 }}
+                            onClick={handleSubmit}
                         >
                             Sign In
                         </Button>

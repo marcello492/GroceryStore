@@ -38,16 +38,9 @@ const DriverHomepage = () => {
                 <img src={logo} alt="CartPool Logo" style={{ maxHeight: '200px' }} />
             </Box>
 
-        <Container maxWidth="lg" sx={{ pt: '100px' }}>
+        <Container maxWidth="lg" sx={{ pt: '120px' }}>
             <Box sx={{ my: 4 }}>
                 <Typography variant="h4">My Trips</Typography>
-                <Button variant="contained" color="primary" sx={{ mb: 2 }} onClick={handleCreateTrip}>
-                    Create New Trip
-                </Button>
-
-                <Button variant="contained" color="secondary" sx={{ mb: 2 }} onClick={handleTrips}>
-                    View All Trips
-                </Button>
 
                 <Typography variant="h5" sx={{ mt: 4 }}>Future Trips</Typography>
                 <Grid container spacing={3}>
@@ -58,7 +51,7 @@ const DriverHomepage = () => {
                     ))}
                 </Grid>
 
-                <Typography variant="h5" sx={{ mt: 4 }}>Past Trips</Typography>
+                <Typography variant="h5" sx={{ mb: 4,mt: 4 }}>Past Trips</Typography>
                 <Grid container spacing={3}>
                     {pastTrips.map((trip) => (
                         <Grid item key={trip.id} xs={12} md={6}>
@@ -66,6 +59,10 @@ const DriverHomepage = () => {
                         </Grid>
                     ))}
                 </Grid>
+
+                <Button variant="contained" color="primary" sx={{ mb: 2 }} onClick={handleCreateTrip}>
+                    Create New Trip
+                </Button>
             </Box>
             
         </Container>

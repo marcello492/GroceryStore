@@ -8,7 +8,9 @@ import DriverSignIn from './Components/Sign_Ins/DriverSignIn';
 import DriverSignUp from './Components/Sign_Ups/DriverSignUp';
 import DriverHomepage from './Components/DriverHomePage';
 import CreateTrip from './Components/CreateTrip';
-import Trips from './Components/Trips'
+import Trips from './Components/Trips';
+
+
 
 function App() {
     return (

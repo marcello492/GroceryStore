@@ -23,7 +23,7 @@ const AvailableTrips = () => {
         <Box component={Link} to="/" sx={{ position: 'absolute', top: 0, left: 0, padding: '0rem' }}>
                 <img src={logo} alt="CartPool Logo" style={{ maxHeight: '200px' }} />
             </Box>
-        <Container maxWidth="lg" sx={{ pt: '100px' }}>
+        <Container Container maxWidth="lg" sx={{ pt: '120px' }}>
             <Typography variant="h4" sx={{ my: 4 }}>
                 Available Trips
             </Typography>
